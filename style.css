@@ -1,0 +1,199 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+#flex-container {
+  justify-content: center;
+  align-items:  center;
+  display: flex;
+  flex-direction: row;
+  background-color: #333;
+}
+#flex-container > nav {
+  width: 80%;
+  text-align: right;
+  margin: 10px;
+  padding: 0px 0px 0px 0px;
+}
+
+#banner-image {
+	padding-top: 160px;
+	padding-bottom: 10px;
+  width: 100%;
+  background-image: url(assets/images/02-hero-bg-22.jpg);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+body {
+	font-family: Arial, sans-serif;
+}
+.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+			width: 10%;
+		}
+		
+		.box {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 150px;
+			height: 125px;
+			background-color: #f2f2f2;
+			border: 1px solid #ccc;
+			margin: 10px;
+		}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+}
+
+nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	margin: 0 10px;
+}
+nav li a:hover::after {
+    height: 6px;
+    bottom: -6px;
+}
+nav li a::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: -3px;
+    right: -3px;
+    height: 3px;
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+main {
+	display: flex;
+	flex-wrap: wrap;
+
+	padding: 20px;
+}
+section {
+	
+	border-right: 3px solid rgb(50, 82, 109);
+	border-radius: 0px;
+	flex-basis: 20%;
+}
+#section-fix {
+	width: 80%;
+	opacity: 1  !important;
+}
+.sectioncard{
+	display: flex;
+}
+.sectioncard span{
+	width: 50%;
+	opacity: 0.85;
+}
+.sectioncard span:hover{
+	opacity: 1;
+}
+section2 {
+    border-right: none;
+	border-right: 3px solid rgb(50, 82, 109);
+	border-radius: 5px;
+	flex-basis: 50% ;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+#section2 {
+    border-right: none;
+	border-right: 3px solid #131313;
+	border-radius: 5px;
+	flex-basis: 50% ;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+section h2 {
+	margin-bottom: 10
+}
+.main-card{
+	background-image: url(assets/images/02-portfolio-4.jpg);
+	background-size: cover;
+  background-position: top;
+  background-blend-mode: overlay;
+	border: solid 5px rgb(164, 221, 221);
+	margin-left: 42px;
+	display: flex;
+}
+.sub-card-2{
+	background-image: url(assets/images/02-portfolio-1.jpg);
+	background-size: cover;
+  background-position: top;
+  background-blend-mode: overlay;
+	border: solid 5px rgb(164, 221, 221);
+	margin-left: 42px;
+	display: inline-flex;
+	transition: 0.3s;
+	opacity: 1;
+}
+.sub-card-2:hover{
+	opacity: 1;
+
+}
+.sub-card-3{
+	background-image: url(assets/images/02-portfolio-2.jpg);
+	background-size: cover;
+  background-position: bottom;
+  background-blend-mode: overlay;
+	border: solid 5px rgb(164, 221, 221);
+	margin-left: 42px;
+	display: inline-flex;
+}
+.sub-card-4{
+	background-image: url(assets/images/02-portfolio-3.jpg);
+	background-size: full;
+  background-position: top;
+  background-blend-mode: overlay;
+	border: solid 5px rgb(164, 221, 221);
+	margin-left: 42px;
+	display: inline-flex;
+}
+.sub-card-5{
+	background-image: url(assets/images/02-run-buddy.jpg);
+	background-size: cover;
+  background-position: top;
+  background-blend-mode: overlay;
+	border: solid 5px rgb(164, 221, 221);
+	margin-left: 42px;
+	display: inline-flex;
+}
+.nav-right li {
+	transition: 0.3s;
+	opacity: 0.85;
+	border-bottom: solid 0px rgb(164, 221, 221);
+}
+.nav-right li:hover {
+	opacity: 1;
+	border-bottom: solid 3px rgb(164, 221, 221);
+}
+.nav-right li a{ 
+	transition: 0.3s;
+	opacity: 0.85;
+}
+.nav-right li a:hover{ 
+	opacity: 1;
+}
